@@ -1,0 +1,95 @@
+:root {
+	--uva-blue: #232D4B;
+	--uva-orange: #E57200;
+	--uva-background-orange: #ffbf80;
+	--margin: 25px;
+}
+
+body
+{
+    background-color: var(--uva-background-orange);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.content {
+	margin-left: var(--margin);
+	margin-right: var(--margin);
+}
+
+h1
+{
+	text-align: center;
+	font-size: xxx-large;
+	color: var(--uva-blue);
+}
+
+.left
+{
+  float: left;
+}
+
+.right
+{
+  float: right;
+}
+
+hr.blue {
+	border-color: var(--uva-blue);
+}
+
+p.caption {
+	color: var(--uva-blue);
+	text-align: center;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+p.caption a {
+	color: var(--uva-blue);
+	text-decoration: none;
+}
+
+.navigation-container {
+	background-color: var(--uva-blue);
+	color: var(--uva-orange);
+	font-size: x-large;
+	font-weight: bold;
+	padding: 12px;
+	margin-top:0 px;
+	position: sticky;
+	top: 0;
+}
+
+.navigation-container a {
+	padding: 12px;
+	color: var(--uva-orange);
+	text-decoration: none;
+}
+
+.navigation-container a:hover {
+	color: var(--uva-blue);
+	background-color: var(--uva-orange);
+}
+
+img.headshot {
+	float: left;
+	height: 70vh;
+	padding: 12px;
+}
+.description {
+	text-align: justified;
+	padding: 20px;
+	font-size: large;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img.complex {
+	float: right;
+	height: 60vh;
+	padding: 12 px;
+}
