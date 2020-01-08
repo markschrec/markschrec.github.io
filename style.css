@@ -73,14 +73,24 @@ p.caption a {
 	background-color: var(--uva-orange);
 }
 
-img.headshot {
+img.person {
+	border-style: solid;
+	border-width: 2px;
+	border-color: var(--uva-blue);
+	margin:10px;
+}
+img.husband {
 	float: left;
 	height: 70vh;
-	padding: 12px;
+}
+
+img.wife {
+	float:right;
+	height:45vh;
 }
 .description {
 	text-align: justified;
-	padding: 20px;
+	margin: 0px 20px 20px 20px;
 	font-size: large;
 }
 .clearfix::after {
@@ -93,3 +103,4 @@ img.complex {
 	height: 60vh;
 	padding: 12 px;
 }
+
