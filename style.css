@@ -78,6 +78,7 @@ img.person {
 	border-width: 2px;
 	border-color: var(--uva-blue);
 	margin:10px;
+	max-width: 95vw;
 }
 img.husband {
 	float: left;
