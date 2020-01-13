@@ -1,0 +1,249 @@
+\RequirePackage{filecontents}
+\begin{filecontents*}{moderncvcolorblue.sty}
+%% start of file `moderncvcolorburgundy.sty'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+%-------------------------------------------------------------------------------
+%                identification
+%-------------------------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{moderncvcolorburgundy}[2013/02/09 v1.3.0 modern curriculum vitae and letter color scheme: burgundy]
+
+%-------------------------------------------------------------------------------
+%                color scheme definition
+%-------------------------------------------------------------------------------
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color2}{HTML}{42558a}% Title and Section Color
+\definecolor{color1}{HTML}{293556}% subsection color
+\endinput
+%% end of file `moderncvcolorburgundy.sty'.
+\end{filecontents*}%%Start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[top=1.2 in,left=1.2 in,right=1.2 in, bottom=1. in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\linespread{1.1}
+
+% personal data
+\name{Mark}{Schrecengost}
+\title{CV}                               % optional, remove / comment the line if not wanted
+\address{728 Regency Ct.}{Charlottesville, VA 22901}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{(724) 599-6985}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{mas3er@virginia.edu}                               % optional, remove / comment the line if not wanted
+\social[github]{markschrec}                              % optional, remove / comment the line if not wanted
+\homepage{markschrec.github.io}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+%\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2014--2020}{Ph.D. Candidate}{University of Virginia}{Charlottesville, VA}{Adviser: Peter Abramenko}{Thesis: Finite Generation of Kac-Moody Groups over Small Fields}  % arguments 3 to 6 can be left empty
+\cventry{2010--2014}{B.S. in Mathematics, Secondary Education Certification}{Grove City College}{Grove City, PA}{}{GPA: 3.97, Dean's List with High Distinction (8 semesters), Summa Cum Laude}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\section{Teaching}
+\subsection{Instructor, University of Virginia, 2015--Present}
+\cvitemwithcomment{Math 1110}{Probability and Finite Math (Non-Coordinated)}{Spring 2019, Spring 2020}
+\cvitemwithcomment{Math 1310}{Calculus I (IBL with a Flipped Classroom)}{Fall 2018, Fall 2019}
+\cvitemwithcomment{Math 1310}{Calculus I}{Fall 2017}
+\cvitemwithcomment{Math 1220}{Survey of Calculus II}{Spring 2016, Fall 2016, Spring 2017}
+\cvitemwithcomment{Math 1210}{Survey of Calculus I}{Fall 2015}
+\vspace{0.1 in}
+\subsection{Teaching Assistant, University of Virginia, 2014--2015}
+\cvitemwithcomment{Math 1320}{Calculus II}{Fall 2014 (2 Sections), Spring 2015}
+\vspace{0.1 in}
+\subsection{Curriculum Development, University of Virginia, 2016--Present}
+\cvitem{Math 1110}{Created and implemented my own curriculum to align with course description, including notes, homework, quizzes and exams}{}
+\cvitem{Math 1310}{Improved curriculum for Calculus I with a flipped classroom by modifying existing materials based on student and instructor feedback}{}
+\cvitem{Math 1210}{Wrote additional notes and lecture materials to accompany and improve the previous curriculum}{}
+\vspace{0.1 in}
+\subsection{Student Teacher, Grove City College, 2013}
+\cvitemwithcomment{Bulter Senior High School}{AP Statistics and Advanced Pre-calculus}{Fall 2013}
+\vspace{0.1 in}
+\subsection{Tutor, Grove City College and University of Virginia, 2010--Present}
+\cvitem{Peer and Private Tutor}{Supplemented student coursework with additional examples and discussions in an interactive environment. Classes include Calculus 1 and 2, Linear Algebra, Abstract Algebra, Real Analysis, Financial Math, computer programming courses, and others}
+
+\section{Research}
+\subsection{Interests}
+\cvitem{Geometric/Combinatorial Group Theory}{Buildings and groups with RGD systems, particularly finiteness properties of groups acting on buildings. I am currently working on my thesis which involves finite generation of Kac-Moody groups over small fields.}
+\cvitem{Game Theory}{Nim type games played on groups by picking generating sets. Research is part of an undergraduate REU for which I was a co-adviser.}
+\cvitem{Machine Learning/AI}{Continuing interest in different aspects of machine learning, specifically those with applications to games. Includes personal research of neural network architectures and Python libraries.}
+\vspace{0.1 in}
+
+\subsection{Papers}
+\textbf{Finite Generation of Kac-Moody Groups over Small Fields}\hfill\small\textit{Ph.D. thesis, in progess}\normalsize\\
+\textbf{Normalizer of Coxeter Groups in the Canonical Linear Representation}\hfill \small\textit{in preparation}\normalsize
+\vspace{0.1 in}
+
+\subsection{Conferences Attended}
+\cvitem{March 2020}{AMS Sectional Meeting, University of Virginia, VA}
+\cvitem{January 2019}{Joint Math Meetings, Baltimore, MD}
+\cvitem{May 2017}{Conference on Combinatorial/Geometric Methods in Group Theory, University of Illinois, IL}
+\vspace{0.1 in}
+
+\subsection{Former Research Experiences}
+\cvitemwithcomment{Director's Summer Program}{Internship, Summer 2013}{Department of Defense}
+\cvitemwithcomment{REU on Graph Pebbling Problems}{Summer, 2012}{Hope College, Holland, MI}
+	
+
+\section{Service}
+\cventry{Spring 2019}{Organizer and Volunteer}{Sonia Day}{University of Virginia}{}{}
+\cventry{2018-2019}{Organized graduate student visits to local middle and elementary}{UVA Math Ambassadors Coordinator}{University of Virginia}{}{}
+\cventry{2015-Present}{Volunteer}{UVA Math Ambassadors}{University of Virginia}{}{}
+\cventry{Summer 2018}{Graduate Co-Adviser}{Summer REU}{University of Virginia}{}{}
+\cventry{2015-2018}{Panelist}{Prospective Graduate Student Open House}{University of Virginia}{}{}
+\cventry{Fall 2017}{Observed and mentored first-time instructors}{Graduate Teaching Mentor}{University of Virginia}{}{}
+\cventry{2013-2014}{President}{Kappa Mu Epsilon}{Grove City College}{}{}
+\cventry{2012-2013}{Vice President}{Kappa Mu Epsilon}{Grove City College}{}{}
+
+\section{Expository Talks}
+\cvitemwithcomment{Proofs with Irrational and Transcendental Numbers}{UVA Undergraduate Math Club}{Spring 2020}
+\cvitemwithcomment{Introduction to Game theory and Nim}{Summer REU Talk}{Summer 2018}
+\cvitemwithcomment{Links Between the Discrete and Continuous}{UVA Graduate Seminar}{Fall 2017}
+\cvitemwithcomment{Coxeter Groups and the Canonical Linear Representation}{UVA Graduate Seminar}{Fall 2016}
+\cvitemwithcomment{Reflection Groups in Inner Product Spaces}{Kac-Moody Seminar}{Spring 2016}
+
+
+\section{Awards and Recognition}
+\cventry{2019}{Nominee}{All-University Graduate Teaching Award}{University of Virginia}{}{}
+\cventry{2019}{Recipient}{Mathematics Department Outstanding TA Award}{University of Virginia}{}{}
+\cventry{2014}{Recipient}{Philip N. Carpenter Senior Mathematics Award}{Grove City College}{}{}
+\cventry{2014}{Recipient}{Franklin C. Ketler Mathematics Prize}{Grove City College}{}{}
+
+\section{Skills}
+\subsection{Technical Skills}
+\cvitem{Computer Programming}{Advanced coursework in C++ and C\# including the development of GUI applications. Self taught experience with Python including common libraries. Minimal HTML/CSS experience.}
+\cvitem{Machine Learning}{Theoretical understanding of neural networks, convolutional neural networks, and various neural network architectures.  Includes personal study of PyTorch.}
+\cvitem{Typesetting}{Extensive experience with \LaTeX, including doctoral thesis and beamer presentations.}
+\cvitem{Mathematical Software}{Experience with Mathematica.}
+\cvitem{Microsoft Suite}{Extensive experience with Excel, including Excel VBA. Experience with Word, Powerpoint, and Outlook.}
+\vspace{0.1 in}
+\subsection{Soft Skills}%
+\cvitem{Communication}{Broad experience communicating mathematical concepts with a variety of audiences. Also reported to academic/teaching advisers to share progress on different projects.}
+\cvitem{Problem Solving}{Worked with professors and fellow graduate students to develop solutions for problems encountered while teaching.}
+\cvitem{Leadership}{Led teams of graduate students on outreach visits to local elementary schools.}
+
+
+
+\section{References}
+Available upon request.
+
+% No Address Possibility
+%noadd%\textbf{Peter Abramenko}\\
+%noadd%Professor of Mathematics, University of Virginia\\
+%noadd%\emailsymbol pa8e@virginia.edu\\
+%noadd%\fixedphonesymbol (434) 924-4162\\
+%noadd%
+%noadd%\textbf{Paul Bourdon}\\
+%noadd%Professor of Mathematics, University of Virginia\\
+%noadd%\emailsymbol psb7p@virginia.edu\\
+%noadd%\fixedphonesymbol (434) 982-2787\\
+%noadd%
+%noadd%\textbf{Tai Melcher}\\
+%noadd%Associate Professor of Mathematics, University of Virginia\\
+%noadd%\emailsymbol melcher@virginia.edu\\
+%noadd%\fixedphonesymbol (434) 982-2787\\
+%noadd%
+%noadd%\textbf{Greg Wissinger}\\
+%noadd%Pastor, Beaver Dam Baptist Church\\
+%noadd%1794 Richmond Rd.\\
+%noadd%Troy, VA 22974\\
+%noadd%\emailsymbol greg\_surge@hotmail.com\\
+%noadd%\fixedphonesymbol (434) 760-6050\\
+%noadd%
+
+
+% with address
+%\begin{tabular}{p{3 in}p{3 in}}
+%	\parbox[t]{3 in}{
+%\textbf{Peter Abramenko}\\
+%Professor of Mathematics\\
+%University of Virginia\\
+%Kerchof Hall, 141 Cabell Dr.\\
+%Charlottesvile, VA 22901\\
+%\emailsymbol pa8e@virginia.edu\\
+%\fixedphonesymbol (434) 924-4162\\
+%}
+%&
+%	\parbox[t]{3 in}{
+%		\textbf{Paul Bourdon} (Teaching Reference)\\
+%Professor of Mathematics\\
+%University of Virginia\\
+%Kerchof Hall, 141 Cabell Dr.\\
+%Charlottesvile, VA 22901\\
+%\emailsymbol psb7p@virginia.edu\\
+%\fixedphonesymbol (434) 982-2787\\
+%}
+%\\
+%	\parbox[t]{3 in}{
+%\textbf{Tai Melcher}\\
+%Associate Professor of Mathematics\\
+%University of Virginia\\
+%Kerchof Hall, 141 Cabell Dr.\\
+%Charlottesvile, VA 22901\\
+%\emailsymbol melcher@virginia.edu\\
+%\fixedphonesymbol (434) 982-2787\\
+%}
+%&
+%	\parbox[t]{3 in}{
+%		\textbf{Greg Wissinger} (Pastoral Reference)\\
+%Pastor\\
+%Beaver Dam Baptist Church\\
+%1794 Richmond Rd.\\
+%Troy, VA 22974\\
+%\emailsymbol greg\_surge@hotmail.com\\
+%\fixedphonesymbol (434) 760-6050\\
+%}
+%\end{tabular}
+
+
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
